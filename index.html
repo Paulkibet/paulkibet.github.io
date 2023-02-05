@@ -31,9 +31,10 @@
 							<li><a href="https://drive.google.com/file/d/1ECKHVqcLEty29Q_IxF01D15Cu1az9vdE/view?usp=share_link">Resume</a></li>
 						</ul>
 						<ul class="icons">
-							<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Paulkibet" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -61,97 +62,54 @@
 							</section>
 
 					</div>
-					<!-- Contact Form
-<section id="footer">
-  <form method="post" action="#">
-    <div class="fields">
-      <div class="field">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" />
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea name="message" id="message" rows="3"></textarea>
-      </div>
-    </div>
-    <ul class="actions">
-      <li>
-        <input type="submit" value="Send Message" onclick="sendMessage(); return false;" />
-      </li>
-    </ul>
-  </form>
-</section> -->
 
-<!-- JavaScript Code for Sending Email using SendGrid API
-<script>
-  function sendMessage() {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
-
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://api.sendgrid.com/v3/mail/send", true);
-    xhr.setRequestHeader("Authorization", "Bearer YOUR_SENDGRID_API_KEY");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onreadystatechange = function() {
-      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 202) {
-        alert("Message sent successfully");
-      }
-    };
-    let data = JSON.stringify({
-      personalizations: [
-        {
-          to: [
-            {
-              email: "your-email-address@example.com"
-            }
-          ],
-          subject: "New Message from Contact Form"
-        }
-      ],
-      from: {
-        email: email,
-        name: name
-      },
-      content: [
-        {
-          type: "text/plain",
-          value: message
-        }
-      ]
-    });
-    xhr.send(data);
-  }
-</script> -->
-<footer>
-	<section class="split contact" style="display: flex; justify-content: center; align-items: center;">
-		<section class="alt" style="text-align: center;">
-		  <h3>Address</h3>
-		  <p>8028-00200,City Center<br />
-			Nairobi, Kenya</p>
-		</section>
-		<section style="text-align: center;">
-		  <h3>Phone</h3>
-		  <p><a href="#">+254712205916</a></p>
-		</section>
-		<section style="text-align: center;">
-		  <h3>Email</h3>
-		  <p><a href="#">kibetpaul040@gmail.com</a></p>
-		</section>
-		<section style="text-align: center;">
-		  <h3>Social</h3>
-		  <ul class="icons alt" style="display: flex; justify-content: center;">
-			<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="https://github.com/Paulkibet" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-		  </ul>
-		</section>
-	  </section>
-	  
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3->Address</h3->
+								<p>8028-00200,City Center<br />
+								Nairobi, Kenya</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+254712205916</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">kibetpaul040@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
 					</footer>
 
 				<!-- Copyright -->
