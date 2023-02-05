@@ -61,30 +61,102 @@
 							</section>
 
 					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
+					<style>
+						#footer {
+						  display: flex;
+						  justify-content: center;
+						  align-items: center;
+						  height: 100vh;
+						}
+					  
+						form {
+						  background-color: #fff;
+						  padding: 2em;
+						  border-radius: 10px;
+						  box-shadow: 0 0 10px #ccc;
+						}
+					  
+						.field {
+						  margin-bottom: 1em;
+						}
+					  
+						label {
+						  font-weight: bold;
+						  display: block;
+						  margin-bottom: 0.5em;
+						}
+					  
+						input[type="text"],
+						textarea {
+						  width: 100%;
+						  padding: 0.5em;
+						  border-radius: 5px;
+						  border: 1px solid #ccc;
+						}
+					  
+						input[type="submit"] {
+						  background-color: #333;
+						  color: #fff;
+						  padding: 0.5em 1em;
+						  border-radius: 5px;
+						  border: none;
+						  font-weight: bold;
+						  cursor: pointer;
+						}
+					  </style>
+					  
+					  <!-- Contact Form -->
+					  <section id="footer">
+						<form method="post" action="#">
+						  <div class="fields">
+							<div class="field">
+							  <label for="name">Name</label>
+							  <input type="text" name="name" id="name" />
+							</div>
+							<div class="field">
+							  <label for="email">Email</label>
+							  <input type="text" name="email" id="email" />
+							</div>
+							<div class="field">
+							  <label for="message">Message</label>
+							  <textarea name="message" id="message" rows="3"></textarea>
+							</div>
+						  </div>
+						  <ul class="actions">
+							<li>
+							  <input type="submit" value="Send Message" onclick="sendMessage(); return false;" />
+							</li>
+						  </ul>
+						</form>
+					  </section>
+					  
+					  <!-- JavaScript Code for Sending Email using SendGrid API -->
+					  <script>
+						function sendMessage() {
+						  let name = document.getElementById("name").value;
+						  let email = document.getElementById("email").value;
+						  let message = document.getElementById("message").value;
+					  
+						  let xhr = new XMLHttpRequest();
+						  xhr.open("POST", "https://api.sendgrid.com/v3/mail/send", true);
+						  xhr.setRequestHeader("Authorization", "Bearer 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");
+						  xhr.setRequestHeader("Content-Type", "application/json");
+						  xhr.onreadystatechange = function() {
+							if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 202) {
+							  alert("Message sent successfully");
+							}
+						  };
+						  let data = JSON.stringify({
+							personalizations: [
+							  {
+								to: [
+								  {
+									email: "kibetpaul040@gmail.com.com"
+								  }
+								],
+								subject:
+					  
+						
 						<section class="split contact">
 							<section class="alt">
 								<h3->Address</h3->
