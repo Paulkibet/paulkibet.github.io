@@ -1,65 +1,130 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>About Me</title>
-	<link rel="stylesheet" href="assets/css/main.css">
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-</head>
-<body class="is-preload">
+<html>
+	<head>
+		<title>About ME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-	<!-- Wrapper -->
-	<div id="wrapper">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-		<!-- Header -->
-		<header id="header">
-			<a href="index.html" class="logo">About Me</a>
-		</header>
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">About me</a>
+					</header>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="links">
-				<li class="active"><a href="index.html">About Me</a></li>
-				<li><a href="Work.html">Work</a></li>
-				<li><a href="Certification.html">Certifications</a></li>
-			</ul>
-			<ul class="icons">
-				<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-				<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-				<li><a href="https://github.com/Paulkibet" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-			</ul>
-		</nav>
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">About ME</a></li>
+							<li><a href="Work.html">Work</a></li>
+							<li><a href="Certification.html">CERTIFICATIONS</a></li>
+<!-- 							<li><a href="https://drive.google.com/file/d/1ECKHVqcLEty29Q_IxF01D15Cu1az9vdE/view?usp=share_link">Resume</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Paulkibet" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
 
-		<!-- Main -->
-		<div id="main">
+				<!-- Main -->
+					<div id="main">
 
-			<!-- Post -->
-			<section class="post">
-				<header class="major">
-					<p id="current-date"></p>
-					<h1>About<br>Me</h1>
-					<p>Hello! I am a versatile individual with a background in banking and finance. Over the years, I have broadened my skillset by venturing into the exciting world of data.</p>
-				</header>
-				<div class="image main"><img src="images/pic01.jpg" alt="Data Analyst"></div>
-				<p>My proficiency in SQL, R, and Python has equipped me with the tools necessary to analyze and interpret complex data. With my hands-on experience in R Studio, Jupyter Notebooks, DB2, Cognos Analytics, Power BI, Tableau, and PostgreSQL, I am well-equipped to tackle a wide range of data-related projects and deliver impactful insights. In addition to my technical skills, I also have vast presentation skills, allowing me to effectively communicate data findings to others. My ability to articulate complex data concepts in a clear and compelling manner can help drive informed decision making and drive positive business outcomes. I am confident in my ability to bring my skills and expertise to any organization and contribute to their success.</p>
-			</section>
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<p id="current-date"></p>
 
-		</div>
+<script>
+  var date = new Date();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById("current-date").innerHTML = date.toLocaleDateString("en-US", options);
+</script>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<form method="post" action="#">
-					<div class="fields">
-						<div class="field">
-							<label for="name">Name</label>
-							<input type="text" name="name" id="name">
-						</div>
-						<div class="field">
-							<label for="
+									<h1>ABOUT<br />
+									ME</h1>
+									<p>Hello! I am a versatile individual with a background in banking and finance. Over the years, I have broadened my skillset by venturing into the exciting world of data.</p>
+								</header>
+								<div class="image main"><img src="images/pic01.jpg" alt="Data Analyst" /></div>
+								<p></p>
+								<p>My proficiency in SQL, R, and Python has equipped me with the tools necessary to analyze and interpret complex data. With my hands-on experience in R Studio, Jupyter Notebooks, DB2, Cognos Analytics, Power BI, Tableau, and PostgreSQL, I am well-equipped to tackle a wide range of data-related projects and deliver impactful insights. In addition to my technical skills, I also have vast presentation skills, allowing me to effectively communicate data findings to others. My ability to articulate complex data concepts in a clear and compelling manner can help drive informed decision making and drive positive business outcomes. I am confident in my ability to bring my skills and expertise to any organization and contribute to their success.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3->Address</h3->
+								<p>8028-00200,City Center<br />
+								Nairobi, Kenya</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+254712205916</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">kibetpaul040@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Paulkibet" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; PaulKibet</li><li>Design: <a href="https://github.com/Paulkibet">@kibet2023</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
