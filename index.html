@@ -7,106 +7,124 @@
 <html>
 	<head>
 		<title>About ME</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<style>
-			/* General styles */
-			body {
-				font-family: "Source Sans Pro", sans-serif;
-				line-height: 1.5;
-				color: #666;
-				background-color: #f3f3f3;
-			}
-			a {
-				color: #777;
-				text-decoration: none;
-			}
-			a:hover {
-				color: #333;
-			}
-			h1, h2, h3, h4, h5, h6 {
-				font-weight: 600;
-				color: #333;
-			}
-			p {
-				margin: 0 0 1.5em 0;
-			}
-			ul {
-				margin: 0 0 1.5em 1.5em;
-				padding: 0;
-			}
-			li {
-				margin: 0.5em 0;
-			}
-			#current-date {
-				font-size: 0.8em;
-				color: #999;
-				margin-bottom: 1.5em;
-			}
-			/* Header */
-			#header {
-				background-color: #fff;
-				padding: 2em 0;
-				position: fixed;
-				top: 0;
-				left: 0;
-				right: 0;
-				box-shadow: 0 0 1em rgba(0,0,0,0.1);
-				z-index: 9999;
-			}
-			#header .logo {
-				font-size: 1.5em;
-				font-weight: 700;
-				letter-spacing: -1px;
-			}
-			#header nav {
-				display: flex;
-				align-items: center;
-			}
-			#header nav ul {
-				display: flex;
-				list-style: none;
-				margin: 0;
-				padding: 0;
-			}
-			#header nav li {
-				margin-left: 2.5em;
-			}
-			#header nav li:first-child {
-				margin-left: 0;
-			}
-			#header nav a {
-				display: block;
-				padding: 0.5em 0;
-			}
-			#header nav a:hover {
-				color: #333;
-			}
-			#header nav .icons {
-				margin-left: auto;
-				display: flex;
-				align-items: center;
-			}
-			#header nav .icons li {
-				margin-left: 2.5em;
-			}
-			#header nav .icons li:first-child {
-				margin-left: 0;
-			}
-			#header nav .icons a {
-				display: block;
-				padding: 0.5em 0;
-			}
-			#header nav .icons a:hover {
-				color: #333;
-			}
-			/* Main */
-			#main {
-				padding: 10em 0 5em 0;
-				margin-top: 6em;
-			}
-			.post {
-				margin-bottom: 3em;
-			}
-			.post .major {
-				margin-bottom: 
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">About me</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">About ME</a></li>
+							<li><a href="Work.html">Work</a></li>
+							<li><a href="Certification.html">CERTIFICATIONS</a></li>
+<!-- 							<li><a href="https://drive.google.com/file/d/1ECKHVqcLEty29Q_IxF01D15Cu1az9vdE/view?usp=share_link">Resume</a></li> -->
+						</ul>
+						<ul class="icons">
+							<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Paulkibet" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<p id="current-date"></p>
+
+<script>
+  var date = new Date();
+  var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById("current-date").innerHTML = date.toLocaleDateString("en-US", options);
+</script>
+
+									<h1>ABOUT<br />
+									ME</h1>
+									<p>Hello! I am a versatile individual with a background in banking and finance. Over the years, I have broadened my skillset by venturing into the exciting world of data.</p>
+								</header>
+								<div class="image main"><img src="images/pic01.jpg" alt="Data Analyst" /></div>
+								<p></p>
+								<p>My proficiency in SQL, R, and Python has equipped me with the tools necessary to analyze and interpret complex data. With my hands-on experience in R Studio, Jupyter Notebooks, DB2, Cognos Analytics, Power BI, Tableau, and PostgreSQL, I am well-equipped to tackle a wide range of data-related projects and deliver impactful insights. In addition to my technical skills, I also have vast presentation skills, allowing me to effectively communicate data findings to others. My ability to articulate complex data concepts in a clear and compelling manner can help drive informed decision making and drive positive business outcomes. I am confident in my ability to bring my skills and expertise to any organization and contribute to their success.</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section class="alt">
+								<h3->Address</h3->
+								<p>8028-00200,City Center<br />
+								Nairobi, Kenya</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+254712205916</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">kibetpaul040@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://twitter.com/IPAUL_KIBET" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.instagram.com/_paulkibet/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://github.com/Paulkibet" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; PaulKibet</li><li>Design: <a href="https://github.com/Paulkibet">@kibet2023</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
