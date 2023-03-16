@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Data Analyst - Your Name</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Data Analyst Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Styling for the header */
+      header {
+        background-color: #0077B5;
+        color: #FFFFFF;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      /* Styling for the main section */
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      /* Styling for the image container */
+      .image-container {
+        width: 300px;
+        height: 200px;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 10px;
+      }
+      /* Styling for the image */
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      /* Styling for the image hover effect */
+      .image-container:hover img {
+        transform: scale(1.1);
+      }
+      /* Styling for the call-to-action button */
+      .cta-button {
+        display: block;
+        background-color: #0077B5;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+        margin: 20px auto;
+        width: 200px;
+        transition: background-color 0.3s ease;
+      }
+      /* Styling for the call-to-action button hover effect */
+      .cta-button:hover {
+        background-color: #005F8B;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <h1>Data Analyst Services</h1>
+      <p>Expertise in Data Analytics, Visualization, and Reporting</p>
     </header>
     <main>
-      <section class="hero">
-        <h1>Data Analyst</h1>
-        <h2>Your Name</h2>
-        <p>Unlock the power of your data with our expert analytics and insights.</p>
-        <a class="cta-button" href="#services">Explore Our Services</a>
-      </section>
-      <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-          <div class="service">
-            <img src="service1.jpg">
-            <h3>Data Analysis</h3>
-            <p>Our expert analysts use the latest tools and techniques to uncover insights from your data.</p>
-          </div>
-          <div class="service">
-            <img src="service2.jpg">
-            <h3>Data Visualization</h3>
-            <p>We help you turn complex data into beautiful and informative visualizations that tell a story.</p>
-          </div>
-          <div class="service">
-            <img src="service3.jpg">
-            <h3>Data Consulting</h3>
-            <p>Our consultants work closely with you to develop a data-driven strategy that meets your business goals.</p>
-          </div>
-        </div>
-      </section>
-      <section id="portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-container">
-          <div class="project">
-            <img src="project1.jpg">
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis risus blandit, ullamcorper sapien ut, vestibulum massa.</p>
-          </div>
-          <div class="project">
-            <img src="project2.jpg">
-            <h3>Project 2</h3>
-            <p>Phasellus commodo orci at sapien posuere, id consequat lorem faucibus. In in mi in nisl aliquet vestibulum eu eget magna.</p>
-          </div>
-          <div class="project">
-            <img src="project3.jpg">
-            <h3>Project 3</h3>
-            <p>Mauris non massa vitae enim imperdiet auctor. Sed sed sapien in nisl accumsan molestie nec sit amet nisl.</p>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1556466654-05c13ec8f49d" alt="Data Visualization">
+      </div>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1573497497524-c4f93086ee4f" alt="Data Analysis">
+      </div>
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1573497497913-3f3ddc7b1f52" alt="Reporting">
+      </div>
+    </main>
+    <a href="#services" class="cta-button">View Our Services</a>
+  </body>
+</html>
