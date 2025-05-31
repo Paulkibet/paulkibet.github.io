@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2c3e50; /* Primary */
+		background-color: #f8f9fa; /* Light Background */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -143,12 +143,12 @@ input, select, textarea {
 		}
 
 	body {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	body, input, select, textarea {
 		font-family: 'Open Sans', sans-serif;
-		font-weight: 400; /* Adjusted for Open Sans */
+		font-weight: 400;
 		font-size: 1rem;
 		line-height: 1.8; /* Adjusted for Open Sans */
 	}
@@ -168,7 +168,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		font-weight: 700; /* Adjusted for Open Sans/Montserrat bold */
+		font-weight: 700;
 	}
 
 	em, i {
@@ -182,7 +182,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Montserrat', sans-serif;
-		font-weight: 700; /* Adjusted for Montserrat */
+		font-weight: 700;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
@@ -214,17 +214,17 @@ input, select, textarea {
 
 	h4 {
 		font-size: 1rem;
-		margin: 0 0 1.5rem 0; /* Added consistent margin */
+		margin: 0 0 1.5rem 0;
 	}
 
 	h5 {
 		font-size: 0.9rem;
-		margin: 0 0 1.25rem 0; /* Added consistent margin */
+		margin: 0 0 1.25rem 0;
 	}
 
 	h6 {
 		font-size: 0.8rem;
-		margin: 0 0 1rem 0; /* Added consistent margin */
+		margin: 0 0 1rem 0;
 	}
 
 	sub {
@@ -291,26 +291,25 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	a {
-		color: #333333; /* Text */
-		/* border-bottom-color: rgba(51, 51, 51, 0.5); */ /* Replaced by transparent to solid on hover */
+		color: #212529; /* Dark Text */
+		border-bottom-color: rgba(33, 37, 41, 0.5); /* Dark Text with opacity for default underline */
 	}
 
 		a:hover {
-			/* border-bottom-color: transparent; */ /* Already transparent by default */
+			border-bottom-color: #3498db; /* Secondary - Reveal underline on hover */
 			color: #3498db !important; /* Secondary */
-			border-bottom-color: #3498db; /* Reveal underline on hover */
 		}
 
 	strong, b {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	blockquote {
@@ -2210,8 +2209,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 1px #333333; /* Simplified border */
-		color: #333333 !important; /* Text */
+		box-shadow: inset 0 0 0 1px #212529; /* Dark Text */
+		color: #212529 !important; /* Dark Text */
 	}
 
 		input[type="submit"]:hover,
@@ -2219,8 +2218,9 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
+			box-shadow: inset 0 0 0 1px #3498db; /* Secondary */
 			color: #3498db !important; /* Secondary */
+			background-color: rgba(52, 152, 219, 0.05); /* Subtle Secondary hover fill */
 		}
 
 		input[type="submit"].primary,
@@ -2228,7 +2228,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #333333; /* Text */
+			background-color: #212529; /* Dark Text */
 			box-shadow: none;
 			color: #ffffff !important; /* White text on dark button */
 		}
@@ -2318,7 +2318,7 @@ input, select, textarea {
 	label {
 		display: block;
 		font-family: 'Montserrat', sans-serif;
-		font-weight: 700; /* Adjusted for Montserrat */
+		font-weight: 700;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		font-size: 0.8rem;
@@ -2413,7 +2413,7 @@ input, select, textarea {
 			letter-spacing: 0;
 				font-family: 'Open Sans', sans-serif;
 			text-transform: none;
-				font-weight: 400; /* Adjusted for Open Sans */
+				font-weight: 400;
 			padding-left: 2.8rem;
 			padding-right: 1rem;
 			position: relative;
@@ -2479,7 +2479,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	input[type="text"],
@@ -2504,7 +2504,7 @@ input, select, textarea {
 
 		select option {
 			background-color: #ffffff; /* White background for options */
-			color: #333333; /* Text */
+			color: #212529; /* Dark Text */
 		}
 
 	.select-wrapper:before {
@@ -2513,7 +2513,7 @@ input, select, textarea {
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 		input[type="checkbox"] + label:before,
@@ -2523,8 +2523,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #333333; /* Text */
-		border-color: #333333; /* Text */
+		background-color: #212529; /* Dark Text */
+		border-color: #212529; /* Dark Text */
 		color: #ffffff; /* White checkmark */
 	}
 
@@ -2572,6 +2572,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			transition: color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Added for icon transitions */
 		}
 
 		.icon > .label {
@@ -2600,6 +2601,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Added subtle shadow */
 		}
 
 		.image.left, .image.right {
@@ -2670,7 +2672,7 @@ input, select, textarea {
 			-moz-transition: -moz-transform 0.2s ease-out;
 			-webkit-transition: -webkit-transform 0.2s ease-out;
 			-ms-transition: -ms-transform 0.2s ease-out;
-			transition: transform 0.2s ease-out;
+			transition: transform 0.2s ease-out; /* Ensured transition is present */
 		}
 
 		a.image:hover img {
@@ -3088,7 +3090,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #333333; /* Text */
+		color: #212529; /* Dark Text */
 	}
 
 	table thead {
@@ -3197,7 +3199,7 @@ input, select, textarea {
 	}
 
 	.pagination a {
-		color: #333333 !important; /* Text */
+		color: #212529 !important; /* Dark Text */
 	}
 
 		.pagination a:hover {
@@ -3237,8 +3239,8 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #2c3e50; /* Primary */
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-color: #f8f9fa; /* Light Background */
+			background-image: url("../../images/overlay.png"), url("../../images/bg.jpg"); /* Removed dark linear-gradient */
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3262,7 +3264,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #2c3e50; /* Primary - Ensure this is the new primary color */
+			background: #f8f9fa; /* Light Background for loader */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3611,7 +3613,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff; /* Light Text */
+		color: #495057; /* Target Dark Text Color for Nav Links */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3620,7 +3622,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(44, 62, 80, 0.95); /* Primary with MORE opacity for sticky */
+		background: #e9ecef; /* Target Nav Background (Desktop) */
 		height: 4.5rem; /* Adjusted height */
 		line-height: 4.5rem; /* Adjusted line-height */
 		margin: 0 auto; /* Removed negative margin for sticky */
@@ -3634,7 +3636,7 @@ input, select, textarea {
 	}
 
 		#nav ul.divided li {
-			border-top-color: #ffffff; /* Light Text */
+			border-top-color: #495057; /* Adjusted for nav text color */
 		}
 
 		#nav ul.icons li a.icon:hover:before {
@@ -3642,46 +3644,46 @@ input, select, textarea {
 		}
 
 		#nav ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 1px #ffffff; /* Simplified border */
+			box-shadow: inset 0 0 0 1px #495057; /* Nav text color for border */
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
+			box-shadow: inset 0 0 0 1px #3498db; /* Secondary */
 		}
 
 		#nav input, #nav select, #nav textarea {
-			color: #ffffff; /* Light Text */
+			color: #495057; /* Nav text color */
 		}
 
 		#nav a {
-			color: #ffffff; /* Light Text */
-			border-bottom-color: rgba(255, 255, 255, 0.5); /* Light Text with opacity */
+			color: #495057; /* Nav text color */
+			border-bottom-color: rgba(73, 80, 87, 0.3); /* Nav text color with opacity */
 		}
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				/* color: #3498db !important; */ /* Handled by li a:hover */
+				/* color is handled by #nav ul.links li a:hover */
 			}
 
 		#nav strong, #nav b {
-			color: #ffffff; /* Light Text */
+			color: #495057; /* Nav text color */
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #ffffff; /* Light Text */
+			color: #495057; /* Nav text color */
 		}
 
 		#nav blockquote {
-			border-left-color: #ffffff; /* Light Text */
+			border-left-color: #495057; /* Nav text color */
 		}
 
 		#nav code {
-			background: rgba(44, 62, 80, 0.1); /* Primary with low opacity */
-			border-color: #ffffff; /* Light Text */
+			background: rgba(73, 80, 87, 0.1); /* Nav text color with low opacity */
+			border-color: #495057; /* Nav text color */
 		}
 
 		#nav hr {
-			border-bottom-color: #ffffff; /* Light Text */
+			border-bottom-color: #495057; /* Nav text color */
 		}
 
 		#nav ul.links {
@@ -3698,7 +3700,7 @@ input, select, textarea {
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			font-family: 'Montserrat', sans-serif;
-			font-weight: 700; /* Adjusted for Montserrat */
+			font-weight: 700;
 			letter-spacing: 0.075em;
 			list-style: none;
 			margin-bottom: 0;
@@ -3723,8 +3725,8 @@ input, select, textarea {
 				}
 
 					#nav ul.links li a:hover {
-						color: #ffffff !important; /* Keep text white on hover */
-						background-color: rgba(52, 152, 219, 0.2); /* Secondary with opacity */
+						color: #3498db !important; /* Secondary text on hover */
+						background-color: rgba(52, 152, 219, 0.1); /* Lighter Secondary background */
 					}
 
 				#nav ul.links li.active {
@@ -3813,7 +3815,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 5rem 3rem 3rem 3rem ; /* Adjusted padding */
+					padding: 5rem 2.5rem 3rem 2.5rem; /* Adjusted padding */
 				}
 
 					#main > .post header.major > .date {
@@ -3898,7 +3900,7 @@ input, select, textarea {
 				}
 
 				#main > .posts > article { /* Adjusted padding for this breakpoint */
-					padding: 2.5rem;
+					padding: 2.5rem 2rem;
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
@@ -3928,7 +3930,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > * {
-				padding: 3rem 2rem 1rem 2rem ; /* Adjusted padding */
+				padding: 3rem 2rem 1.5rem 2rem; /* Adjusted padding */
 			}
 
 		}
@@ -4506,7 +4508,7 @@ input, select, textarea {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #ffffff; /* Light Text */
+		color: #212529; /* Dark Text for toggle on light page header */
 		font-family: 'Montserrat', sans-serif;
 		font-size: 0.9rem;
 		font-weight: 700; /* Adjusted for Montserrat */
@@ -4537,7 +4539,7 @@ input, select, textarea {
 		#navPanelToggle.alt {
 			background-color: rgba(255, 255, 255, 0.95); /* White with MORE opacity */
 			box-shadow: 0 0.125rem 0.75rem 0 rgba(44, 62, 80, 0.25); /* Primary with opacity */
-			color: #2c3e50; /* Primary text on light bg */
+			color: #212529; /* Dark Text on light bg */
 		}
 
 			#navPanelToggle.alt:hover {
@@ -4574,7 +4576,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		background: #ffffff; /* White */
 		box-shadow: none;
-		color: #333333; /* Text color for panel */
+		color: #212529; /* Dark Text for panel content */
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4605,7 +4607,7 @@ input, select, textarea {
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
 					text-transform: uppercase;
-					color: #333333; /* Text */
+					color: #212529; /* Dark Text */
 				}
 
 					#navPanel .links li a:hover {
@@ -4657,7 +4659,7 @@ input, select, textarea {
 			}
 
 			#navPanel .close:hover {
-				color: #2c3e50 !important; /* Primary */
+				color: #212529 !important; /* Dark Text */
 			}
 
 			@media screen and (max-width: 736px) {
