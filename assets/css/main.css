@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /*
 	Massively by HTML5 UP
@@ -99,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #1e252d;
+		background-color: #2c3e50; /* Primary */
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -144,14 +143,14 @@ input, select, textarea {
 		}
 
 	body {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
-		font-weight: 300;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400; /* Adjusted for Open Sans */
 		font-size: 1rem;
-		line-height: 2.375;
+		line-height: 1.8; /* Adjusted for Open Sans */
 	}
 
 	a {
@@ -159,16 +158,17 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: solid 1px transparent; /* Updated link underline */
 		text-decoration: none;
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: #3498db; /* Secondary - Updated link underline hover */
+			color: #3498db !important; /* Secondary */
 		}
 
 	strong, b {
-		font-weight: 600;
+		font-weight: 700; /* Adjusted for Open Sans/Montserrat bold */
 	}
 
 	em, i {
@@ -177,16 +177,16 @@ input, select, textarea {
 
 	p {
 		text-align: justify;
-		margin: 0 0 2rem 0;
+		margin: 0 0 1.75rem 0; /* Adjusted paragraph margin */
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 900;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700; /* Adjusted for Montserrat */
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
-		margin: 0 0 1rem 0;
+		margin: 0 0 1rem 0; /* Default, will be overridden */
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -198,30 +198,33 @@ input, select, textarea {
 	h1 {
 		font-size: 4rem;
 		line-height: 1.1;
-		margin: 0 0 2rem 0;
+		margin: 0 0 2.5rem 0; /* Adjusted h1 margin */
 	}
 
 	h2 {
 		font-size: 1.75rem;
 		line-height: 1.3;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 2rem 0; /* Adjusted h2 margin */
 	}
 
 	h3 {
 		font-size: 1.25rem;
-		margin: 0 0 1.5rem 0;
+		margin: 0 0 1.75rem 0; /* Adjusted h3 margin */
 	}
 
 	h4 {
 		font-size: 1rem;
+		margin: 0 0 1.5rem 0; /* Added consistent margin */
 	}
 
 	h5 {
 		font-size: 0.9rem;
+		margin: 0 0 1.25rem 0; /* Added consistent margin */
 	}
 
 	h6 {
 		font-size: 0.8rem;
+		margin: 0 0 1rem 0; /* Added consistent margin */
 	}
 
 	sub {
@@ -237,14 +240,14 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px;
+		border-left: solid 4px; /* Kept thicker for emphasis */
 		font-style: italic;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
 
 	code {
-		border: solid 2px;
+		border: solid 1px; /* Simplified border */
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
 		margin: 0 0.25rem;
@@ -267,7 +270,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px;
+		border-bottom: solid 1px; /* Simplified border */
 		margin: 3rem 0;
 	}
 
@@ -288,38 +291,39 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	a {
-		color: #212931;
-		border-bottom-color: rgba(33, 41, 49, 0.5);
+		color: #333333; /* Text */
+		/* border-bottom-color: rgba(51, 51, 51, 0.5); */ /* Replaced by transparent to solid on hover */
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
-			color: #18bfef !important;
+			/* border-bottom-color: transparent; */ /* Already transparent by default */
+			color: #3498db !important; /* Secondary */
+			border-bottom-color: #3498db; /* Reveal underline on hover */
 		}
 
 	strong, b {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	blockquote {
-		border-left-color: #eeeeee;
+		border-left-color: #dddddd; /* Borders/Lines */
 	}
 
 	code {
-		background: rgba(220, 220, 220, 0.25);
-		border-color: #eeeeee;
+		background: rgba(221, 221, 221, 0.5); /* Table Striping/Code Backgrounds */
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 	hr {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #dddddd; /* Borders/Lines */
 	}
 
 /* Row */
@@ -2038,7 +2042,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		border: solid 2px;
+		border: solid 1px; /* Simplified border */
 		margin-bottom: 2rem;
 		padding: 1.5rem;
 	}
@@ -2056,7 +2060,7 @@ input, select, textarea {
 		}
 
 	.box {
-		border-color: #eeeeee;
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 /* Button */
@@ -2078,9 +2082,9 @@ input, select, textarea {
 		border-radius: 0;
 		cursor: pointer;
 		display: inline-block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 0.8rem;
-		font-weight: 900;
+		font-weight: 700; /* Adjusted for Montserrat */
 		letter-spacing: 0.075em;
 		height: 3rem;
 		line-height: 3rem;
@@ -2206,8 +2210,8 @@ input, select, textarea {
 	button,
 	.button {
 		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #212931;
-		color: #212931 !important;
+		box-shadow: inset 0 0 0 1px #333333; /* Simplified border */
+		color: #333333 !important; /* Text */
 	}
 
 		input[type="submit"]:hover,
@@ -2215,8 +2219,8 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 2px #18bfef;
-			color: #18bfef !important;
+			box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
+			color: #3498db !important; /* Secondary */
 		}
 
 		input[type="submit"].primary,
@@ -2224,9 +2228,9 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #212931;
+			background-color: #333333; /* Text */
 			box-shadow: none;
-			color: #ffffff !important;
+			color: #ffffff !important; /* White text on dark button */
 		}
 
 			input[type="submit"].primary:hover,
@@ -2234,7 +2238,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #18bfef;
+				background-color: #3498db; /* Secondary */
 			}
 
 /* Form */
@@ -2313,8 +2317,8 @@ input, select, textarea {
 
 	label {
 		display: block;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-weight: 900;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700; /* Adjusted for Montserrat */
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		font-size: 0.8rem;
@@ -2341,7 +2345,7 @@ input, select, textarea {
 		appearance: none;
 		background: transparent;
 		border-radius: 0;
-		border: solid 2px;
+		border: solid 1px; /* Simplified border */
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -2407,9 +2411,9 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 1rem;
 			letter-spacing: 0;
-			font-family: "Merriweather", Georgia, serif;
+				font-family: 'Open Sans', sans-serif;
 			text-transform: none;
-			font-weight: 300;
+				font-weight: 400; /* Adjusted for Open Sans */
 			padding-left: 2.8rem;
 			padding-right: 1rem;
 			position: relative;
@@ -2432,7 +2436,7 @@ input, select, textarea {
 			input[type="checkbox"] + label:before,
 			input[type="radio"] + label:before {
 				border-radius: 0;
-				border: solid 2px;
+				border: solid 1px; /* Simplified border */
 				content: '';
 				display: inline-block;
 				font-size: 0.8rem;
@@ -2475,7 +2479,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	input[type="text"],
@@ -2483,7 +2487,7 @@ input, select, textarea {
 	input[type="email"],
 	select,
 	textarea {
-		border-color: #eeeeee;
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 		input[type="text"]:focus,
@@ -2491,62 +2495,62 @@ input, select, textarea {
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #18bfef;
+			border-color: #3498db; /* Secondary */
 		}
 
 	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23eeeeee' /%3E%3C/svg%3E");
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E"); /* Borders/Lines */
 	}
 
 		select option {
-			background-color: #ffffff;
-			color: #212931;
+			background-color: #ffffff; /* White background for options */
+			color: #333333; /* Text */
 		}
 
 	.select-wrapper:before {
-		color: #eeeeee;
+		color: #dddddd; /* Borders/Lines */
 	}
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
-			border-color: #eeeeee;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #212931;
-		border-color: #212931;
-		color: #ffffff;
+		background-color: #333333; /* Text */
+		border-color: #333333; /* Text */
+		color: #ffffff; /* White checkmark */
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #18bfef;
+		border-color: #3498db; /* Secondary */
 	}
 
 	::-webkit-input-placeholder {
-		color: #909498 !important;
+		color: #888888 !important; /* Secondary Text/Placeholder */
 	}
 
 	:-moz-placeholder {
-		color: #909498 !important;
+		color: #888888 !important; /* Secondary Text/Placeholder */
 	}
 
 	::-moz-placeholder {
-		color: #909498 !important;
+		color: #888888 !important; /* Secondary Text/Placeholder */
 	}
 
 	:-ms-input-placeholder {
-		color: #909498 !important;
+		color: #888888 !important; /* Secondary Text/Placeholder */
 	}
 
 	.formerize-placeholder {
-		color: #909498 !important;
+		color: #888888 !important; /* Secondary Text/Placeholder */
 	}
 
 /* Icon */
@@ -2877,7 +2881,7 @@ input, select, textarea {
 
 		dl dt {
 			display: block;
-			font-weight: 600;
+			font-weight: 700; /* Adjusted */
 			margin: 0 0 1rem 0;
 		}
 
@@ -2886,19 +2890,19 @@ input, select, textarea {
 		}
 
 	ul.divided li {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd; /* Borders/Lines */
 	}
 
 	ul.icons li a.icon:hover:before {
-		color: #18bfef;
+		color: #3498db; /* Secondary */
 	}
 
 	ul.icons.alt li .icon:before {
-		box-shadow: inset 0 0 0 2px #eeeeee;
+		box-shadow: inset 0 0 0 1px #dddddd; /* Simplified border */
 	}
 
 	ul.icons.alt li a.icon:hover:before {
-		box-shadow: inset 0 0 0 2px #18bfef;
+		box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
 	}
 
 /* Section/Article */
@@ -2945,7 +2949,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 5rem 0; /* Adjusted margin */
 			text-align: center;
 		}
 
@@ -2969,7 +2973,7 @@ input, select, textarea {
 					position: absolute;
 					top: 50%;
 					width: calc(50% - 6rem);
-					border-top: solid 2px;
+					border-top: solid 1px; /* Simplified border */
 				}
 
 				header.major > .date:before {
@@ -2991,13 +2995,13 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			header.major {
-				margin: 0 0 2rem 0;
+				margin: 0 0 3rem 0; /* Adjusted for smaller screens */
 			}
 
 		}
 
 	header.major .date:before, header.major .date:after {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd; /* Borders/Lines */
 	}
 
 /* Table */
@@ -3013,7 +3017,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px;
+			border: solid 1px; /* Simplified border */
 			border-left: 0;
 			border-right: 0;
 		}
@@ -3023,9 +3027,9 @@ input, select, textarea {
 		}
 
 		table th {
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 0.8rem;
-			font-weight: 900;
+			font-weight: 700; /* Adjusted for Montserrat */
 			letter-spacing: 0.075em;
 			line-height: 1.5;
 			padding: 0 0.75rem 0.75rem 0.75rem;
@@ -3042,11 +3046,11 @@ input, select, textarea {
 			}
 
 		table thead {
-			border-bottom: solid 2px;
+			border-bottom: solid 1px; /* Simplified border */
 		}
 
 		table tfoot {
-			border-top: solid 2px;
+			border-top: solid 1px; /* Simplified border */
 		}
 
 		table.alt {
@@ -3054,17 +3058,17 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px;
+				border: solid 1px; /* Simplified border */
 				border-left-width: 0;
 				border-top-width: 0;
 			}
 
 				table.alt tbody tr td:first-child {
-					border-left-width: 1px;
+					border-left-width: 1px; /* Simplified border */
 				}
 
 			table.alt tbody tr:first-child td {
-				border-top-width: 1px;
+				border-top-width: 1px; /* Simplified border */
 			}
 
 			table.alt thead {
@@ -3076,27 +3080,27 @@ input, select, textarea {
 			}
 
 	table tbody tr {
-		border-color: #eeeeee;
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 		table tbody tr:nth-child(2n + 1) {
-			background-color: rgba(220, 220, 220, 0.25);
+			background-color: rgba(221, 221, 221, 0.5); /* Table Striping/Code Backgrounds */
 		}
 
 	table th {
-		color: #212931;
+		color: #333333; /* Text */
 	}
 
 	table thead {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #dddddd; /* Borders/Lines */
 	}
 
 	table tfoot {
-		border-top-color: #eeeeee;
+		border-top-color: #dddddd; /* Borders/Lines */
 	}
 
 	table.alt tbody tr td {
-		border-color: #eeeeee;
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 /* Pagination */
@@ -3121,15 +3125,15 @@ input, select, textarea {
 			-webkit-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 			-ms-transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-			border: solid 2px;
+			border: solid 1px; /* Simplified border */
 			display: inline-block;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			font-family: 'Montserrat', sans-serif;
 			font-size: 0.8rem;
-			font-weight: 900;
+			font-weight: 700; /* Adjusted for Montserrat */
 			height: 3rem;
 			letter-spacing: 0.075em;
-			line-height: calc(3rem - 4px);
-			margin-left: -2px;
+			line-height: calc(3rem - 2px); /* Adjusted for 1px border */
+			margin-left: -1px; /* Adjusted for 1px border */
 			min-width: 3rem;
 			position: relative;
 			text-align: center;
@@ -3189,30 +3193,30 @@ input, select, textarea {
 		}
 
 	.pagination a, .pagination span {
-		border-color: #eeeeee;
+		border-color: #dddddd; /* Borders/Lines */
 	}
 
 	.pagination a {
-		color: #212931 !important;
+		color: #333333 !important; /* Text */
 	}
 
 		.pagination a:hover {
-			color: #18bfef !important;
-			border-color: #18bfef;
+			color: #3498db !important; /* Secondary */
+			border-color: #3498db; /* Secondary */
 			z-index: 1;
 		}
 
 			.pagination a:hover + a,
 			.pagination a:hover + span {
-				border-left-color: #18bfef;
+				border-left-color: #3498db; /* Secondary */
 			}
 
 		.pagination a.active {
-			background-color: #eeeeee;
+			background-color: #dddddd; /* Borders/Lines */
 		}
 
 	.pagination span {
-		color: #eeeeee;
+		color: #dddddd; /* Borders/Lines */
 	}
 
 /* Wrapper */
@@ -3233,7 +3237,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
+			background-color: #2c3e50; /* Primary */
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
@@ -3258,7 +3262,7 @@ input, select, textarea {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background: #1e252d;
+			background: #2c3e50; /* Primary - Ensure this is the new primary color */
 			content: '';
 			display: block;
 			height: 100%;
@@ -3284,7 +3288,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		color: #ffffff;
+		color: #ffffff; /* Light Text */
 		padding: 8rem 4rem 6rem 4rem ;
 		-moz-align-items: center;
 		-webkit-align-items: center;
@@ -3314,38 +3318,38 @@ input, select, textarea {
 	}
 
 		#intro input, #intro select, #intro textarea {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#intro a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #ffffff; /* Light Text */
+			border-bottom-color: rgba(255, 255, 255, 0.5); /* Light Text with opacity */
 		}
 
 			#intro a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #3498db !important; /* Secondary */
 			}
 
 		#intro strong, #intro b {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#intro h1, #intro h2, #intro h3, #intro h4, #intro h5, #intro h6 {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#intro blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #ffffff; /* Light Text */
 		}
 
 		#intro code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			background: rgba(44, 62, 80, 0.1); /* Primary with low opacity */
+			border-color: #ffffff; /* Light Text */
 		}
 
 		#intro hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #ffffff; /* Light Text */
 		}
 
 		#intro input[type="submit"],
@@ -3354,8 +3358,8 @@ input, select, textarea {
 		#intro button,
 		#intro .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #ffffff;
-			color: #ffffff !important;
+			box-shadow: inset 0 0 0 1px #ffffff; /* Simplified border */
+			color: #ffffff !important; /* Light Text */
 		}
 
 			#intro input[type="submit"]:hover,
@@ -3363,8 +3367,8 @@ input, select, textarea {
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
+				color: #3498db !important; /* Secondary */
 			}
 
 			#intro input[type="submit"].primary,
@@ -3372,9 +3376,9 @@ input, select, textarea {
 			#intro input[type="button"].primary,
 			#intro button.primary,
 			#intro .button.primary {
-				background-color: #ffffff;
+				background-color: #ffffff; /* White */
 				box-shadow: none;
-				color: #1e252d !important;
+				color: #2c3e50 !important; /* Primary for text on light button */
 			}
 
 				#intro input[type="submit"].primary:hover,
@@ -3382,7 +3386,8 @@ input, select, textarea {
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
-					background-color: #18bfef;
+					background-color: #3498db; /* Secondary */
+					color: #ffffff !important; /* Light Text */
 				}
 
 		#intro h1 {
@@ -3493,7 +3498,7 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		color: #ffffff;
+		color: #ffffff; /* Light Text */
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3523,38 +3528,38 @@ input, select, textarea {
 	}
 
 		#header input, #header select, #header textarea {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#header a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #ffffff; /* Light Text */
+			border-bottom-color: rgba(255, 255, 255, 0.5); /* Light Text with opacity */
 		}
 
 			#header a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #3498db !important; /* Secondary */
 			}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#header blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #ffffff; /* Light Text */
 		}
 
 		#header code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			background: rgba(44, 62, 80, 0.1); /* Primary with low opacity */
+			border-color: #ffffff; /* Light Text */
 		}
 
 		#header hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #ffffff; /* Light Text */
 		}
 
 		#header .logo {
@@ -3564,11 +3569,11 @@ input, select, textarea {
 			transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
 			pointer-events: auto;
 			border-style: solid;
-			border-color: #ffffff;
-			border-width: 5px !important;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
+			border-color: #ffffff; /* Light Text */
+			border-width: 3px !important; /* Simplified border */
+			font-family: 'Montserrat', sans-serif;
 			font-size: 2.25rem;
-			font-weight: 900;
+			font-weight: 700; /* Adjusted for Montserrat */
 			letter-spacing: 0.075em;
 			line-height: 1;
 			padding: 1rem 1.75rem;
@@ -3577,8 +3582,8 @@ input, select, textarea {
 		}
 
 			#header .logo:hover {
-				border-color: #18bfef !important;
-				color: #18bfef !important;
+				border-color: #3498db !important; /* Secondary */
+				color: #3498db !important; /* Secondary */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -3598,7 +3603,7 @@ input, select, textarea {
 
 				#header .logo {
 					font-size: 1.75rem;
-					border-width: 3px !important;
+					border-width: 2px !important; /* Further simplified border */
 				}
 
 		}
@@ -3606,7 +3611,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		color: #ffffff;
+		color: #ffffff; /* Light Text */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3615,67 +3620,68 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
-		background: rgba(255, 255, 255, 0.175);
-		height: 4rem;
-		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		background: rgba(44, 62, 80, 0.95); /* Primary with MORE opacity for sticky */
+		height: 4.5rem; /* Adjusted height */
+		line-height: 4.5rem; /* Adjusted line-height */
+		margin: 0 auto; /* Removed negative margin for sticky */
 		overflow: hidden;
 		padding: 0 2rem 0 0;
-		position: relative;
+		position: sticky; /* Sticky Nav */
+		top: 0; /* Stick to top */
 		width: calc(100% - 4rem);
 		max-width: 72rem;
-		z-index: 2;
+		z-index: 1000; /* Ensure it's above other content */
 	}
 
 		#nav ul.divided li {
-			border-top-color: #ffffff;
+			border-top-color: #ffffff; /* Light Text */
 		}
 
 		#nav ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: #3498db; /* Secondary */
 		}
 
 		#nav ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 2px #ffffff;
+			box-shadow: inset 0 0 0 1px #ffffff; /* Simplified border */
 		}
 
 		#nav ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
 		}
 
 		#nav input, #nav select, #nav textarea {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#nav a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #ffffff; /* Light Text */
+			border-bottom-color: rgba(255, 255, 255, 0.5); /* Light Text with opacity */
 		}
 
 			#nav a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				/* color: #3498db !important; */ /* Handled by li a:hover */
 			}
 
 		#nav strong, #nav b {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#nav blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #ffffff; /* Light Text */
 		}
 
 		#nav code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			background: rgba(44, 62, 80, 0.1); /* Primary with low opacity */
+			border-color: #ffffff; /* Light Text */
 		}
 
 		#nav hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #ffffff; /* Light Text */
 		}
 
 		#nav ul.links {
@@ -3691,8 +3697,8 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-weight: 900;
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700; /* Adjusted for Montserrat */
 			letter-spacing: 0.075em;
 			list-style: none;
 			margin-bottom: 0;
@@ -3713,24 +3719,24 @@ input, select, textarea {
 					display: block;
 					font-size: 0.8rem;
 					outline: none;
-					padding: 0 2rem;
+					padding: 0 2.25rem; /* Adjusted padding */
 				}
 
 					#nav ul.links li a:hover {
-						color: inherit !important;
-						background-color: rgba(255, 255, 255, 0.1);
+						color: #ffffff !important; /* Keep text white on hover */
+						background-color: rgba(52, 152, 219, 0.2); /* Secondary with opacity */
 					}
 
 				#nav ul.links li.active {
-					background-color: #ffffff;
+					background-color: #3498db; /* Secondary */
 				}
 
 					#nav ul.links li.active a {
-						color: #1e252d;
+						color: #ffffff !important; /* Light text on active background */
 					}
 
 						#nav ul.links li.active a:hover {
-							color: #18bfef !important;
+							background-color: #3498db; /* Keep active color on hover */
 						}
 
 		#nav ul.icons {
@@ -3756,7 +3762,7 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
+		background-color: #ffffff; /* Main Content Background */
 		position: relative;
 		margin: 0 auto;
 		width: calc(100% - 4rem);
@@ -3765,8 +3771,8 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			padding: 5rem 5rem 3rem 5rem ; /* Adjusted padding */
+			border-top: solid 1px #dddddd; /* Simplified border */
 			margin: 0;
 		}
 
@@ -3779,7 +3785,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 10rem 6rem 8rem 6rem ; /* Adjusted padding */
 		}
 
 			#main > .post header.major > .date {
@@ -3799,7 +3805,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 8rem 5rem 6rem 5rem ; /* Adjusted padding */
 				}
 
 			}
@@ -3807,7 +3813,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 5rem 3rem 3rem 3rem ; /* Adjusted padding */
 				}
 
 					#main > .post header.major > .date {
@@ -3852,20 +3858,16 @@ input, select, textarea {
 				flex-grow: 0;
 			}
 
-			#main > .posts > * {
+			#main > .posts > * { /* This is the article directly */
 				width: 50%;
 			}
 
-			#main > .posts > * {
-				padding: 4rem;
-				width: 50%;
-			}
-
-			#main > .posts > article {
-				border-color: #eeeeee;
-				border-left-width: 2px;
+			#main > .posts > article { /* More specific selector */
+				padding: 4.5rem; /* Adjusted padding */
+				border-color: #dddddd; /* Borders/Lines */
+				border-left-width: 1px; /* Simplified border */
 				border-style: solid;
-				border-top-width: 2px;
+				border-top-width: 1px; /* Simplified border */
 				text-align: center;
 			}
 
@@ -3883,13 +3885,8 @@ input, select, textarea {
 
 			@media screen and (max-width: 980px) {
 
-				#main > .posts > * {
-					width: 50%;
-				}
-
-				#main > .posts > * {
-					padding: 2.5rem;
-					width: 50%;
+				#main > .posts > article { /* Adjusted padding for this breakpoint */
+					padding: 3rem;
 				}
 
 			}
@@ -3900,17 +3897,16 @@ input, select, textarea {
 					width: 100%;
 				}
 
-				#main > .posts > * {
-					padding: 2rem;
-					width: 100%;
+				#main > .posts > article { /* Adjusted padding for this breakpoint */
+					padding: 2.5rem;
 				}
 
 				#main > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2px;
+					border-left-width: 1px; /* Simplified border */
 				}
 
 				#main > .posts > article:nth-child(-n + 2) {
-					border-top-width: 2px;
+					border-top-width: 1px; /* Simplified border */
 				}
 
 				#main > .posts > article:nth-child(n) {
@@ -3932,7 +3928,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > * {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				padding: 3rem 2rem 1rem 2rem ; /* Adjusted padding */
 			}
 
 		}
@@ -3948,13 +3944,12 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color: #717981;
+		color: #555555; /* Secondary Text */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
-		color: #909498;
+		background-color: #ecf0f1; /* Light Background */
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
@@ -3964,42 +3959,42 @@ input, select, textarea {
 	}
 
 		#footer input, #footer select, #footer textarea {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 		#footer a {
-			color: #717981;
-			border-bottom-color: rgba(113, 121, 129, 0.5);
+			color: #555555; /* Secondary Text */
+			border-bottom-color: rgba(85, 85, 85, 0.5); /* Secondary Text with opacity */
 		}
 
 			#footer a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #3498db !important; /* Secondary */
 			}
 
 		#footer strong, #footer b {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 		#footer blockquote {
-			border-left-color: #e2e2e2;
+			border-left-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer code {
-			background: rgba(220, 220, 220, 0.5);
-			border-color: #e2e2e2;
+			background: rgba(221, 221, 221, 0.5); /* Table Striping/Code Backgrounds */
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer hr {
-			border-bottom-color: #e2e2e2;
+			border-bottom-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer .box {
-			border-color: #e2e2e2;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer input[type="submit"],
@@ -4008,8 +4003,8 @@ input, select, textarea {
 		#footer button,
 		#footer .button {
 			background-color: transparent;
-			box-shadow: inset 0 0 0 2px #717981;
-			color: #717981 !important;
+			box-shadow: inset 0 0 0 1px #555555; /* Simplified border */
+			color: #555555 !important; /* Secondary Text */
 		}
 
 			#footer input[type="submit"]:hover,
@@ -4017,8 +4012,8 @@ input, select, textarea {
 			#footer input[type="button"]:hover,
 			#footer button:hover,
 			#footer .button:hover {
-				box-shadow: inset 0 0 0 2px #18bfef;
-				color: #18bfef !important;
+				box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
+				color: #3498db !important; /* Secondary */
 			}
 
 			#footer input[type="submit"].primary,
@@ -4026,9 +4021,9 @@ input, select, textarea {
 			#footer input[type="button"].primary,
 			#footer button.primary,
 			#footer .button.primary {
-				background-color: #717981;
+				background-color: #555555; /* Secondary Text */
 				box-shadow: none;
-				color: #f5f5f5 !important;
+				color: #ecf0f1 !important; /* Light Background for text on dark button */
 			}
 
 				#footer input[type="submit"].primary:hover,
@@ -4036,11 +4031,12 @@ input, select, textarea {
 				#footer input[type="button"].primary:hover,
 				#footer button.primary:hover,
 				#footer .button.primary:hover {
-					background-color: #18bfef;
+					background-color: #3498db; /* Secondary */
+					color: #ffffff !important; /* White text */
 				}
 
 		#footer label {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 		#footer input[type="text"],
@@ -4048,7 +4044,7 @@ input, select, textarea {
 		#footer input[type="email"],
 		#footer select,
 		#footer textarea {
-			border-color: #e2e2e2;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 			#footer input[type="text"]:focus,
@@ -4056,133 +4052,133 @@ input, select, textarea {
 			#footer input[type="email"]:focus,
 			#footer select:focus,
 			#footer textarea:focus {
-				border-color: #18bfef;
+				border-color: #3498db; /* Secondary */
 			}
 
 		#footer select {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23e2e2e2' /%3E%3C/svg%3E");
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23dddddd' /%3E%3C/svg%3E"); /* Borders/Lines */
 		}
 
 			#footer select option {
-				background-color: #f5f5f5;
-				color: #717981;
+				background-color: #ecf0f1; /* Light Background */
+				color: #555555; /* Secondary Text */
 			}
 
 		#footer .select-wrapper:before {
-			color: #e2e2e2;
+			color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer input[type="checkbox"] + label,
 		#footer input[type="radio"] + label {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 			#footer input[type="checkbox"] + label:before,
 			#footer input[type="radio"] + label:before {
-				border-color: #e2e2e2;
+				border-color: #dddddd; /* Borders/Lines */
 			}
 
 		#footer input[type="checkbox"]:checked + label:before,
 		#footer input[type="radio"]:checked + label:before {
-			background-color: #717981;
-			border-color: #717981;
-			color: #f5f5f5;
+			background-color: #555555; /* Secondary Text */
+			border-color: #555555; /* Secondary Text */
+			color: #ecf0f1; /* Light Background for checkmark */
 		}
 
 		#footer input[type="checkbox"]:focus + label:before,
 		#footer input[type="radio"]:focus + label:before {
-			border-color: #18bfef;
+			border-color: #3498db; /* Secondary */
 		}
 
 		#footer ::-webkit-input-placeholder {
-			color: #b3b7bb !important;
+			color: #aaaaaa !important; /* Lighter Secondary Text/Placeholder */
 		}
 
 		#footer :-moz-placeholder {
-			color: #b3b7bb !important;
+			color: #aaaaaa !important; /* Lighter Secondary Text/Placeholder */
 		}
 
 		#footer ::-moz-placeholder {
-			color: #b3b7bb !important;
+			color: #aaaaaa !important; /* Lighter Secondary Text/Placeholder */
 		}
 
 		#footer :-ms-input-placeholder {
-			color: #b3b7bb !important;
+			color: #aaaaaa !important; /* Lighter Secondary Text/Placeholder */
 		}
 
 		#footer .formerize-placeholder {
-			color: #b3b7bb !important;
+			color: #aaaaaa !important; /* Lighter Secondary Text/Placeholder */
 		}
 
 		#footer ul.divided li {
-			border-top-color: #e2e2e2;
+			border-top-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer ul.icons li a.icon:hover:before {
-			color: #18bfef;
+			color: #3498db; /* Secondary */
 		}
 
 		#footer ul.icons.alt li .icon:before {
-			box-shadow: inset 0 0 0 2px #e2e2e2;
+			box-shadow: inset 0 0 0 1px #dddddd; /* Simplified border */
 		}
 
 		#footer ul.icons.alt li a.icon:hover:before {
-			box-shadow: inset 0 0 0 2px #18bfef;
+			box-shadow: inset 0 0 0 1px #3498db; /* Simplified border */
 		}
 
 		#footer header.major .date:before, #footer header.major .date:after {
-			border-top-color: #e2e2e2;
+			border-top-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer table tbody tr {
-			border-color: #e2e2e2;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 			#footer table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(220, 220, 220, 0.5);
+				background-color: rgba(221, 221, 221, 0.25); /* Lighter than table striping on white */
 			}
 
 		#footer table th {
-			color: #717981;
+			color: #555555; /* Secondary Text */
 		}
 
 		#footer table thead {
-			border-bottom-color: #e2e2e2;
+			border-bottom-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer table tfoot {
-			border-top-color: #e2e2e2;
+			border-top-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer table.alt tbody tr td {
-			border-color: #e2e2e2;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer .pagination a, #footer .pagination span {
-			border-color: #e2e2e2;
+			border-color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer .pagination a {
-			color: #717981 !important;
+			color: #555555 !important; /* Secondary Text */
 		}
 
 			#footer .pagination a:hover {
-				color: #18bfef !important;
-				border-color: #18bfef;
+				color: #3498db !important; /* Secondary */
+				border-color: #3498db; /* Secondary */
 				z-index: 1;
 			}
 
 				#footer .pagination a:hover + a,
 				#footer .pagination a:hover + span {
-					border-left-color: #18bfef;
+					border-left-color: #3498db; /* Secondary */
 				}
 
 			#footer .pagination a.active {
-				background-color: #e2e2e2;
+				background-color: #dddddd; /* Borders/Lines */
 			}
 
 		#footer .pagination span {
-			color: #e2e2e2;
+			color: #dddddd; /* Borders/Lines */
 		}
 
 		#footer > section {
@@ -4198,8 +4194,8 @@ input, select, textarea {
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			padding: 4rem 4rem 2rem 4rem ;
-			border-left: solid 2px #e2e2e2;
+			padding: 5rem 4rem 3rem 4rem ; /* Adjusted padding */
+			border-left: solid 1px #dddddd; /* Simplified border */
 		}
 
 			#footer > section:first-child {
@@ -4220,7 +4216,7 @@ input, select, textarea {
 
 				#footer > section.split > section {
 					padding: 3rem 4rem 1rem 4rem ;
-					border-top: solid 2px #e2e2e2;
+					border-top: solid 1px #dddddd; /* Simplified border */
 				}
 
 					#footer > section.split > section:first-child {
@@ -4241,7 +4237,7 @@ input, select, textarea {
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 3.5rem 4rem; /* Adjusted padding */
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4272,11 +4268,11 @@ input, select, textarea {
 					}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
+						padding: 3.5rem 4rem; /* Adjusted padding */
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						padding: 3.5rem 4rem; /* Adjusted padding */
 					}
 
 					#footer > section.split.contact > section.alt {
@@ -4303,7 +4299,7 @@ input, select, textarea {
 			}
 
 				#footer > section {
-					border-top: solid 2px #e2e2e2;
+					border-top: solid 1px #dddddd; /* Simplified border */
 				}
 
 					#footer > section:first-child {
@@ -4311,27 +4307,27 @@ input, select, textarea {
 					}
 
 					#footer > section.split > section {
-						padding: 4rem 4rem 2rem 4rem ;
+						padding: 3.5rem 3rem 1.5rem 3rem ; /* Adjusted padding */
 					}
 
 						#footer > section.split > section:first-child {
-							padding: 4rem 4rem 2rem 4rem ;
+							padding: 3.5rem 3rem 1.5rem 3rem ; /* Adjusted padding */
 						}
 
 						#footer > section.split > section:last-child {
-							padding: 4rem 4rem 2rem 4rem ;
+							padding: 3.5rem 3rem 1.5rem 3rem ; /* Adjusted padding */
 						}
 
 					#footer > section.split.contact > section {
-						padding: 4rem;
+						padding: 3rem 3rem; /* Adjusted padding */
 					}
 
 						#footer > section.split.contact > section:first-child {
-							padding: 4rem;
+							padding: 3rem 3rem; /* Adjusted padding */
 						}
 
 						#footer > section.split.contact > section:last-child {
-							padding: 4rem;
+							padding: 3rem 3rem; /* Adjusted padding */
 						}
 
 				#footer form label,
@@ -4344,52 +4340,66 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
+			#main > * {
+				padding: 3rem 2rem 1.5rem 2rem; /* Adjusted padding */
+			}
+			#main > .post {
+				padding: 5rem 2.5rem 3rem 2.5rem; /* Adjusted padding */
+			}
+			#main > .posts > article {
+				padding: 2.5rem 2rem; /* Adjusted padding */
+			}
+			header.major {
+				margin: 0 0 3rem 0; /* Adjusted for smaller screens */
+			}
+
 			#footer > section {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				padding: 3rem 2rem 1.5rem 2rem ; /* Adjusted padding */
 			}
 
 				#footer > section.split > section {
-					padding: 2rem 2rem 0.1rem 2rem ;
+					padding: 2.5rem 2rem 1rem 2rem ; /* Adjusted padding */
 				}
 
 					#footer > section.split > section:first-child {
-						padding: 2rem 2rem 0.1rem 2rem ;
+						padding: 2.5rem 2rem 1rem 2rem ; /* Adjusted padding */
 					}
 
 					#footer > section.split > section:last-child {
-						padding: 2rem 2rem 0.1rem 2rem ;
+						padding: 2.5rem 2rem 1rem 2rem ; /* Adjusted padding */
 					}
 
 				#footer > section.split.contact > section {
-					padding: 2rem;
+					padding: 2.5rem 2rem; /* Adjusted padding */
 				}
 
 					#footer > section.split.contact > section:first-child {
-						padding: 2rem;
+						padding: 2.5rem 2rem; /* Adjusted padding */
 					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 2rem;
+						padding: 2.5rem 2rem; /* Adjusted padding */
 					}
 
 		}
 
 		@media screen and (max-width: 480px) {
 
-			#footer {
+			#main {
 				width: 100%;
 			}
 
 		}
 
 	#copyright {
-		color: #ffffff;
+		color: #ffffff; /* Light Text on primary bg */
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
+		/* color: rgba(255, 255, 255, 0.25); */ /* Original was for text on #1e252d. New bg is #2c3e50, so full white might be too stark. Let's use a slightly less opaque white */
+		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		font-size: 0.8rem;
-		font-weight: 900;
+		font-weight: 700; /* Adjusted for Montserrat */
 		letter-spacing: 0.075em;
 		line-height: 1.5;
 		text-align: center;
@@ -4401,42 +4411,42 @@ input, select, textarea {
 	}
 
 		#copyright input, #copyright select, #copyright textarea {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#copyright a {
-			color: #ffffff;
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			color: #ffffff; /* Light Text */
+			border-bottom-color: rgba(255, 255, 255, 0.5); /* Light Text with opacity */
 		}
 
 			#copyright a:hover {
 				border-bottom-color: transparent;
-				color: #18bfef !important;
+				color: #3498db !important; /* Secondary */
 			}
 
 		#copyright strong, #copyright b {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#copyright h1, #copyright h2, #copyright h3, #copyright h4, #copyright h5, #copyright h6 {
-			color: #ffffff;
+			color: #ffffff; /* Light Text */
 		}
 
 		#copyright blockquote {
-			border-left-color: #ffffff;
+			border-left-color: #ffffff; /* Light Text */
 		}
 
 		#copyright code {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
+			background: rgba(44, 62, 80, 0.1); /* Primary with low opacity */
+			border-color: #ffffff; /* Light Text */
 		}
 
 		#copyright hr {
-			border-bottom-color: #ffffff;
+			border-bottom-color: #ffffff; /* Light Text */
 		}
 
 		#copyright a {
-			color: inherit;
+			color: inherit; /* Will inherit rgba(255,255,255,0.75) */
 			border-bottom-color: inherit;
 		}
 
@@ -4447,7 +4457,7 @@ input, select, textarea {
 		}
 
 			#copyright ul li {
-				border-left: solid 2px;
+				border-left: solid 1px; /* Simplified border */
 				display: inline-block;
 				line-height: 1;
 				margin-left: 1rem;
@@ -4496,10 +4506,10 @@ input, select, textarea {
 		top: 0.75rem;
 		right: 0.75rem;
 		border: 0;
-		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		color: #ffffff; /* Light Text */
+		font-family: 'Montserrat', sans-serif;
 		font-size: 0.9rem;
-		font-weight: 900;
+		font-weight: 700; /* Adjusted for Montserrat */
 		letter-spacing: 0.075em;
 		padding: 0.375rem 1.25rem;
 		text-transform: uppercase;
@@ -4525,13 +4535,13 @@ input, select, textarea {
 		}
 
 		#navPanelToggle.alt {
-			background-color: rgba(255, 255, 255, 0.875);
-			box-shadow: 0 0.125rem 0.75rem 0 rgba(30, 37, 45, 0.25);
-			color: #212931;
+			background-color: rgba(255, 255, 255, 0.95); /* White with MORE opacity */
+			box-shadow: 0 0.125rem 0.75rem 0 rgba(44, 62, 80, 0.25); /* Primary with opacity */
+			color: #2c3e50; /* Primary text on light bg */
 		}
 
 			#navPanelToggle.alt:hover {
-				background-color: #ffffff;
+				background-color: #ffffff; /* White */
 			}
 
 		@media screen and (max-width: 980px) {
@@ -4562,9 +4572,9 @@ input, select, textarea {
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		display: none;
 		-webkit-overflow-scrolling: touch;
-		background: #ffffff;
+		background: #ffffff; /* White */
 		box-shadow: none;
-		color: #212931;
+		color: #333333; /* Text color for panel */
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -4583,20 +4593,24 @@ input, select, textarea {
 		}
 
 			#navPanel .links li {
-				border-top: solid 2px #eeeeee;
+				border-top: solid 1px #dddddd; /* Simplified border */
 			}
 
 				#navPanel .links li a {
 					border-bottom: 0;
 					display: block;
-					font-family: "Source Sans Pro", Helvetica, sans-serif;
+					font-family: 'Montserrat', sans-serif;
 					font-size: 0.9rem;
-					font-size: 0.9rem;
-					font-weight: 900;
+					font-weight: 700; /* Adjusted for Montserrat */
 					letter-spacing: 0.075em;
 					padding: 0.75rem 0;
 					text-transform: uppercase;
+					color: #333333; /* Text */
 				}
+
+					#navPanel .links li a:hover {
+						color: #3498db !important; /* Secondary */
+					}
 
 				#navPanel .links li:first-child {
 					border-top: 0;
@@ -4610,7 +4624,7 @@ input, select, textarea {
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 			border: 0;
-			color: #909498;
+			color: #888888; /* Secondary Text/Placeholder */
 			cursor: pointer;
 			display: block;
 			height: 3.25rem;
@@ -4643,7 +4657,7 @@ input, select, textarea {
 			}
 
 			#navPanel .close:hover {
-				color: #212931;
+				color: #2c3e50 !important; /* Primary */
 			}
 
 			@media screen and (max-width: 736px) {
