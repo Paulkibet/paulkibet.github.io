@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+        <nav>
+            <ul>
+                <li><a href="{{ SITEURL }}/">Home</a></li>
+                <li><a href="{{ SITEURL }}/pages/about.html">About</a></li>
+                {# Example: Link to a potential portfolio index page if we create one #}
+                {# This assumes articles are directly under SITEURL/portfolio/ #}
+                <li><a href="{{ SITEURL }}/{{ articles[0].url | replace(articles[0].slug + '.html', '') if articles else '#' }}">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Content will be inserted here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ SITENAME }} {{ AUTHOR }} - Powered by <a href="https://getpelican.com/">Pelican</a></p>
+    </footer>
+</body>
+</html>

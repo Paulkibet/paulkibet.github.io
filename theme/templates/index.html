@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Portfolio - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+    <section id="portfolio-list">
+        <h2>Portfolio Projects</h2>
+        {% if articles %}
+            {% for article in articles %}
+                <article class="portfolio-item-summary">
+                    <header>
+                        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                        <p>
+                            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+                            {% if article.category %}
+                            | Category: <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+                            {% endif %}
+                        </p>
+                    </header>
+                    <div class="summary">
+                        {{ article.summary }}
+                        {# Pelican's summary is the first part of the content before <!-- PELICAN_END_SUMMARY -->,
+                           or as defined by SUMMARY_MAX_LENGTH in pelicanconf.py.
+                           If summary isn't explicitly defined in the .md, it might take the whole content or be empty.
+                           The sample .md file has an explicit "Summary:" line which Pelican will pick up. #}
+                    </div>
+                    <p><a href="{{ SITEURL }}/{{ article.url }}">Read more &raquo;</a></p>
+                </article>
+                {% if not loop.last %}
+                    <hr class="project-separator">
+                {% endif %}
+            {% endfor %}
+        {% else %}
+            <p>No portfolio projects have been added yet. Check back soon!</p>
+        {% endif %}
+    </section>
+
+    {# Example: Pagination (optional, can be added later if many projects) #}
+    {% if articles_page and articles_paginator.num_pages > 1 %}
+    <div class="pagination">
+        {% if articles_page.has_previous() %}
+        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo; Previous</a>
+        {% endif %}
+        Page {{ articles_page.number }} of {{ articles_paginator.num_pages }}
+        {% if articles_page.has_next() %}
+        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">Next &raquo;</a>
+        {% endif %}
+    </div>
+    {% endif %}
+
+{% endblock %}
